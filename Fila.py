@@ -25,5 +25,15 @@ def dequeue(self):
     self.total -= 1
     return removido
 
+def exibir_fila(self):
+    if self.frente is None:
+        print("Fila vazia.")
+        return
+    atual = self.frente
+    while atual:
+        print(atual.musica)
+        atual = atual.proximo
 
-    
+def limpar(self):
+    self.frente = self.fim = None
+    self.total = 0
