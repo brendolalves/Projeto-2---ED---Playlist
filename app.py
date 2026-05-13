@@ -27,7 +27,7 @@ def main():
     historico = Fila()
 
     while True:
-        opcao = exibir_menu
+        opcao = exibir_menu()
 
         if opcao == "1": 
             try:
