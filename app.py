@@ -1,5 +1,5 @@
 from Fila import Fila
-from Biblioteca import Biblioteca
+from Biblioteca import Biblioteca 
 from humor import montar_filas
 
 def exibir_menu():
@@ -36,6 +36,7 @@ def main():
                 genero = input("Gênero: ")
                 bpm = int(input("BPM: "))
                 if bpm <= 0: raise ValueError
+
                 bib.adicionar(titulo, artista, genero, bpm)
             except ValueError:
                 print("Erro: BPM deve ser um número inteiro positivo.")
@@ -118,6 +119,6 @@ def main():
             break
 
 if __name__ == "__main__":
-    main()
+     main()
 
         
